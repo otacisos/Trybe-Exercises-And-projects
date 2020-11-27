@@ -1,3 +1,0 @@
-Exercicios JSArrayLoopFor
-//
-3
