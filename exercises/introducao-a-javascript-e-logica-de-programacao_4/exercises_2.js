@@ -7,5 +7,3 @@ let info = {
 
     console.log('Bem vinda' + ' ' + info.personagem + '.' +'\nNão sei se era recorrente, era? ' + info.recorrente);
     console.log(info.recorrente);
-
-    
