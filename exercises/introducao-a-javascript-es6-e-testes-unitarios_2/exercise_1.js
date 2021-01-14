@@ -38,26 +38,26 @@ const customerInfo = (order) => {
   const address = 'address';
   const number = order[address].number;
   const deliveryPerson = order.order.delivery.deliveryPerson;
-  const constumerPersona = ['name'];
   const namePersona = order.name;
   const numberPhone = order.phoneNumber;
   const street = order[address].street;
   const apartment = order[address].apartment;
 
 
-  console.log(`"Olá, ${deliveryPerson}, entrega para: ${namePersona}, Telefone: ${numberPhone}, R. ${street}, 
+  console.log(`  "Olá, ${deliveryPerson}, entrega para: ${namePersona}, Telefone: ${numberPhone}, R. ${street}, 
   Nº ${number}, AP: ${apartment}."`);
 
 }
 customerInfo(order);
 
-// Complete a função orderModifier() para que seu retorno seja similar a "Olá Luiz Silva, 
-// o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ 50,00."
-// Modifique o nome da pessoa compradora.
-// Modifique o valor total da compra para R$ 50,00.
 const orderModifier = (order) => {
-  
+  const name = order.name = 'Luiz Silva';
+  const nameP1 = order['pizza'] = 'muzzarella';
+  const nameP2 = order['pizza'] = 'calabresa';
+  const drink = order.order.drinks.coke.type;
+  const payment = order['payment'] = '50';
 
+  console.log(`\n  Olá, ${name}, o total do seu pedido de ${nameP1}, ${nameP2} e ${drink} é ${payment}.00R$.`);
 }
 orderModifier(order);
 
