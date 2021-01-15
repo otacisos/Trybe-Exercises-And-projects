@@ -1,7 +1,8 @@
 
-let move = 'tower';
+let movem = 'TOWER';
+let toLowerCase = movem.toLowerCase();
 
-switch (move) {
+switch (toLowerCase) {
   case 'bishop':
   console.log('diagonals');
   break;
