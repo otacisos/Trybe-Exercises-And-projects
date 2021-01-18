@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const books = [
   {
     id: 1,
@@ -61,7 +63,18 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
-  return books.find(book => book.author.birthYear === 1947).author.name;
+function smallerName() {
+  let nameBook;
+  // escreva aqui o seu código
+  books.forEach((book) => {
+    if (book.name.length < nameBook.length){
+      nameBook = book.name;
+    }
+    
+  });
+
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
 }
 
+assert.strictEqual(smallerName(), 'Duna');
