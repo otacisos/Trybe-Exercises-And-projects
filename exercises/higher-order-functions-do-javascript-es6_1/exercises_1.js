@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const books = [
   {
     id: 1,
@@ -62,6 +64,10 @@ const books = [
 ];
 
 function authorBornIn1947() {
-  return books.find(book => book.author.birthYear === 1947).author.name;
+  // escreva aqui o seu código
+  return books.find((book) => {
+    return book.author.birthYear === 1947;
+  }).author.name;
 }
 
+assert.strictEqual(authorBornIn1947(), 'Stephen King');
