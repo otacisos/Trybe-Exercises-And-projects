@@ -18,4 +18,5 @@ for (lIndex = 0; lIndex < n; lIndex += 1) {
   console.log(l);
   l = '';
   inp -= 1;
+
 };
