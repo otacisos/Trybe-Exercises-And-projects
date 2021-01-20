@@ -10,12 +10,12 @@ for (lIndex = 0; lIndex < n; lIndex += 1) {
     if(index2 < inp ) {
       l += ' ';
     } else if (index2 >= 4) {
-      l += ' '
+      l += ' ';
     } else {
-      l += '*'
+      l += '*';
     }
   }
   console.log(l);
   l = '';
-  inp -= 1
+  inp -= 1;
 };
