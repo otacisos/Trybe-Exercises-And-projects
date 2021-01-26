@@ -14,17 +14,11 @@
 // } console.log(verificaPalindrome('1, 2, 3') );
 
 //Duas formas de resolver o exercício
-
-function verificaPalin(palavra) {
-  let arrayLetras = palavra.split('');
-  let isPalindrome = true;
-  for (let i = 0; i < arrayLetras.length; i+= 1) {
-    if (arrayLetras[i] != palavra[(palavra.length - 1) - i]) {
-      isPalindrome = false;
-    }
-  }console.log(palavra);
-  return isPalindrome;
-}
+let palavra;
+let isPalindrome = true;
+let arrayLetras = [];
+const result = verificaPalin => (arrayLetras != palavra[(palavra.length - 1) - i])
+console.log( result);
 
 // function verificaPalindrome(palavra) {
 //   let arrayLetras = palavra.split("");
